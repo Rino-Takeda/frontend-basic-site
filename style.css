@@ -218,7 +218,7 @@ section {
 
 /* courses */
 .courses {
-  background-color: var(--color-background-black);
+  background-color: var(--color-background-navy);
 }
 
 .course-container {
@@ -276,6 +276,10 @@ section {
   font-size: 32px;
   letter-spacing: 0.05em;
   position: relative;
+}
+
+:is(.course-block:hover, .course-block:focus) .course-card-body{
+  background-color: var(--color-course-hover-yellow);
 }
 
 .course-card-body {
