@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>サイト制作課題</title>
@@ -8,65 +8,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet"
     />
-  </head>
-  <body>
+</head>
+<body>
     <header class="header">
-      <h1 class="header-logo-wrapper">
+    <h1 class="header-logo-wrapper">
         <img class="header-logo" src="./img/logo.svg" alt="Grand Players" />
-      </h1>
+    </h1>
     </header>
     <section class="hero">
-      <div class="hero-container">
+    <div class="hero-container">
         <div class="hero-texts">
-          <p class="hero-main-copy">
+            <p class="hero-main-copy">
             BE<br />
             A<br />
             <span class="hero-main-copy-accent">“GRAND”</span><br />
             PLAYER!!
-          </p>
-          <p class="hero-sub-copy">
+            </p>
+            
+            <p class="hero-sub-copy">
             選べる1000のレッスンであなたもギターヒーローに
-          </p>
+            </p>
         </div>
-      </div>
+    </div>
     </section>
 
     <section class="about">
-      <div class="container about-container">
+    <div class="container about-container">
         <div class="section-head">
-          <p class="about-section-title">
+            <p class="about-section-title">
             What is <span class="about-section-title-accent-red">Grand</span>
             <span class="about-section-title-accent-yellow">Players</span>?
-          </p>
+            </p>
         </div>
 
         <div class="about-main">
-          <p class="about-main-text">
+            <p class="about-main-text">
             Grand Players
             は従量課金制のオンデマンド動画を用いたオンラインギターレッスンサービスです。
             好きな時間に、自分にあったレベルでギターの上達を目指すことができます。
             また、複数のレッスンをまとめた「コース」を受講することで、より体系的にテクニックを身に着けることもできます。
             「コース」を受講された方は、現役ギタリスト講師との個別面談で、より最適なレッスンの選択をサポートいたします。
-          </p>
+            </p>
 
-          <div class="about-main-image-wrapper">
-            <img
-              class="about-main-image"
-              src="./img/live.png"
-              alt="live-music"
-            />
-          </div>
+            <div class="about-main-image-wrapper">
+                <img
+                class="about-main-image"
+                src="./img/live.png"
+                alt="live-music"
+                />
+            </div>
         </div>
-      </div>
+    </div>
     </section>
 
     <section id="courses" class="courses">
-      <div class="container course-container">
+    <div class="container course-container">
         <div class="section-head">
-          <p class="course-section-title">Courses</p>
+            <p class="course-section-title">Courses</p>
         </div>
 
         <div class="course-cards-container">
@@ -123,17 +124,54 @@
           </a>
         </div>
 
-        <a class="button course-flame" href="#">
-          <div class="course-flame-button-label">すべてのコースを見る</div>
-          <div class="course-flame-icon">
-            <img
-              src="./img/arrow-right.svg"
-              alt="more"
-              class="course-flame-icon-img"
-            />
-          </div>
+        <a class="button button-flame" href="#">
+            <div class="button-flame-label">すべてのコースを見る</div>
+            <div class="button-flame-icon">
+                <img
+                src="./img/arrow-right.svg"
+                alt="more"
+                class="button-flame-icon-img"
+                />
+            </div>
         </a>
-      </div>
+    </div>
     </section>
-  </body>
+
+    <section class="signup">
+        <div class="container signup-container">
+            <h2 class="section-head signup-section-title">Let's Try!</h2>
+
+            <div class="signup-section-text">
+                <p class="signup-text">
+                    Grand Playersでは、ご利用登録いただけた方に対し、３レッスン分の無料枠をプレゼントいたします！ <br>
+                    今すぐレッスンを始めて、”Grand”なプレイヤーを目指しましょう！ <br>
+                    お申し込みは下記フォームからどうぞ！
+                </p>
+            </div>
+
+            <form class="signup-form-container" action="">
+                <div class="signup-input-container">
+                    <label class="signup-label" for="name">お名前</label>
+                    <input class="signup-input" type="text" id="name" name="name" placeholder="エドワード ヴァン 太郎">
+
+                    <label class="signup-label" for="email">メールアドレス</label>
+                    <input class="signup-input" type="email" id="email" name="email" placeholder="grand.players@example.com">
+
+                    <label class="signup-label" for="guitar-for-play">ギター歴(年)</label>
+                    <input class="signup-input" type="number" id="guitar-for-play" name="guitar-for-play" placeholder="3" min="0">
+
+                    <label class="signup-label" for="will">意気込みをどうぞ！</label>
+                    <textarea class="signup-textarea" id="will" name="will" placeholder="イカすギターソロをかましてモテた～い！" rows="5"></textarea>
+                </div>
+
+                <button class="button signup-button">
+                    <div class="button-flame-label">送信する</div>
+                    <div class="button-flame-icon">
+                        <img src="./img/arrow-right.svg" alt="more" class="button-flame-icon-img">
+                    </div>
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
 </html>
