@@ -439,6 +439,10 @@ section {
     resize: vertical;
 }
 
+input:focus-visible{
+    outline-offset: 0px;
+}
+
 .signup-button{
     box-shadow: 4px 4px 0 0 var(--color-black);
 }
