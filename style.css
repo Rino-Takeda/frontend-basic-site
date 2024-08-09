@@ -431,9 +431,8 @@ section {
 .signup-textarea{
     border-radius: 8px;
     border: 1px solid var(--color-form-border-red);
-    background-color: var(--color-form-background-yellow);
+    background: var(--color-form-background-yellow);
     font-size: 16px;
-    font-family: var(--font-family-body);
     color: var(--color-form-placeholder-gray);
     padding: 10px;
     resize: vertical;
@@ -468,5 +467,30 @@ input:focus-visible{
     .signup-input, .signup-textarea{
         font-size: 12px;
         padding: 8px;
+    }
+}
+
+/* footer */
+.footer{
+    background-color: var(--color-background-black);
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copy-right{
+    color: var(--color-white);
+    font-size: 16px;
+    font-family: var(--font-family-body);
+}
+
+@media (max-width:750px){
+    .footer{
+        padding: 40px 0;
+    }
+
+    .copy-right{
+        font-size: 12px;
     }
 }
