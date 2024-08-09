@@ -446,6 +446,11 @@ input:focus-visible{
     box-shadow: 4px 4px 0 0 var(--color-black);
 }
 
+.signup-button:hover,
+.signup-button:focus{
+    box-shadow: 12px 12px 2px var(--color-black);
+}
+
 @media (max-width:750px) {
     section{
         padding: 40px 0;
