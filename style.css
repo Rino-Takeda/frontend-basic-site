@@ -427,13 +427,20 @@ section {
     color: var(--color-black);
 }
 
+.signup-input::placeholder{
+    color: var(--color-form-placeholder-gray);
+}
+
+.signup-textarea::placeholder{
+    color: var(--color-form-placeholder-gray);
+}
+
 .signup-input,
 .signup-textarea{
     border-radius: 8px;
     border: 1px solid var(--color-form-border-red);
     background: var(--color-form-background-yellow);
     font-size: 16px;
-    color: var(--color-form-placeholder-gray);
     padding: 10px;
     resize: vertical;
 }
